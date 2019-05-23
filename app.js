@@ -60,7 +60,7 @@ document.querySelector(DOMStrings.roll).addEventListener("click", function() {
     document.querySelector(DOMStrings.dice + 2).src =
       "img/dice-" + diceNum2 + ".png";
 
-    if (diceNum1 !== 1 || diceNum2 !== 1) {
+    if (diceNum1 !== 1 && diceNum2 !== 1) {
       roundScore += diceNum1 + diceNum2;
       document.querySelector(
         DOMStrings.current + activePlayer
